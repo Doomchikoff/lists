@@ -1,0 +1,62 @@
+body{
+        background: linear-gradient(90deg, #3415e0, #477ef5, #23a6d5, #23d5ab);
+        background-size: 400% 400%;
+        animation: gradient 10s ease infinite;
+        transform: translate3d(0, 0, 0);
+        }
+        @keyframes gradient {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }   
+}
+p{
+    background: linear-gradient(to left, blue, yellow, green);
+    font-size: 50px;
+    color: aqua;
+    text-align: center;
+}
+ul, ol{
+    font-size: 24px;
+    color: rgb(0, 0, 0);
+}
+ul.u1 li::marker{
+    color: blue;
+    font-size: 1,2em;
+}
+.u2 li{
+    padding-left: 10px;
+}
+ol{
+  margin-left: 50px;
+}
+@counter-style md-emojies {
+  system: cyclic;
+  symbols: 😀 👻 👽 👾 🤖 🎃 😹 👋 👀 ;
+  suffix: " ";
+}
+
+ul.u3{
+  list-style: md-emojies;
+}
+@counter-style md-1 {
+  system: cyclic;
+  symbols: 🐈 🐯 🐮 🐷 🐑 🐘 🦏 🐭 ;
+  suffix: " ";
+}
+ul.u4{
+  list-style: md-1;
+}
+@counter-style upper-ukrainian {
+  system: alphabetic;
+  symbols: '\410' '\411' '\412' '\413' '\414' '\415' '\404' '\416' '\417' '\418' '\406' '\41A' '\41B' '\41C' '\41D' '\41E' '\41F' '\420' '\421' '\422' '\423' '\424' '\425' '\426' '\427' '\428' '\42E' '\42F';
+  /* symbols: 'А' 'Б' 'В' 'Г' 'Д' 'Е' 'Є' 'Ж' 'З' 'И' 'І' 'К' 'Л' 'М' 'Н' 'О' 'П' 'Р' 'С' 'Т' 'У' 'Ф' 'Х' 'Ц' 'Ч' 'Ш' 'Ю' 'Я'; */
+  }
+  ul.u5{
+    list-style: upper-ukrainian;
+  }
